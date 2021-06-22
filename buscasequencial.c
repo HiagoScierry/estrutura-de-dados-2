@@ -21,7 +21,7 @@ int sentinela(int *vetor, int k)
     int i;
 
     vetor[TAM] = k;
-    for (i = 0; i < vetor[i] != k; i++)
+    for (i = 0; vetor[i] != k; i++)
     {
     }
 
@@ -59,7 +59,8 @@ int movendoElemeto(int *vetor, int k){
 int main(int argc, char const *argv[])
 {
 
-    int vet[TAM], chave, retorno;
+    int vet[TAM + 1];  // PARA IMPLEMENTAR SETINELA UTILIZE O TAMANHO DE VETOR TAM + 1
+    int chave, retorno;
 
     for (int i = 0; i < TAM; i++)
     {

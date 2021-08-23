@@ -36,13 +36,12 @@ void sortBolhaComParada(int *dados)
 
         while (j < N)
         {
-            if (dados[j] > dados[j + 1])
+             if (dados[j-1] > dados[j])
             {
-                aux = dados[j];
-                dados[j] = dados[j + 1];
-                dados[j + 1] = aux;
+                aux = dados[j-1];
+                dados[j-1] = dados[j];
+                dados[j] = aux;
                 mudou = 1;
-
             }
             indice = j;
             j = j + 1;
